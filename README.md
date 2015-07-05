@@ -2,9 +2,9 @@
 Dan's React Component Boilerplate
 
 ##Installation:
-Manually install Bourbon Sass to css/libs.
+* Manually install Bourbon Sass to css/libs.
 
-run ```npm install```.
+* run ```npm install```.
 
 ##Building
 run ```npm start```.
