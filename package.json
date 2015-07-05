@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "dependencies": {
+    "react":"^0.13.3",
+    "react-tools":"^0.13.3"
+  },
+  "devDependencies": {
+    "browserify": "5.10.1",
+    "watchify": "^2.0.0",
+    "reactify":"^1.1.1",
+    "node-sass":"^3.2.0",
+    "livereload":"^0.3.7",
+    "http-server":"^0.8.0"
+  },
+  "scripts": {
+    "build": "browserify js/app.js -t reactify --everything -o app.bundle.js",
+    "start": "watchify js/app.js -t reactify --everything -o  app.bundle.js & node-sass -w css/main.scss css/main.css & livereload & http-server -p 8472"
+  }
+}

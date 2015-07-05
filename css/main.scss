@@ -1,0 +1,54 @@
+@import "./libs/normalize";
+@import "./libs/bourbon/bourbon";
+@import "./libs/neat/neat";
+
+//Fonts
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+//Vars
+$c1: #2b2d37;
+$c2: #3f4252;
+$c3: #b2b8d5;
+$c4: #8ee995;
+$c5: #fff;
+$reciepeBg: $c2;
+$reciepeText: $c3;
+$siteBg: $c1;
+$vRythm: 25px;
+$base-font: 'Montserrat', sans-serif;
+
+// Includes depending on vars
+
+//
+
+html, body{
+  height: 100%;
+}
+body{
+  background-color: $c1;
+  color: white;
+  font-family: $base-font;
+}
+
+#app-wrapper{
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  display: block;
+}
+#app-wrapper #app-title{
+  font-size: 10px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+
+#app{
+  background-color: $c2;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
