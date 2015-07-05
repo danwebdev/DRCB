@@ -1,8 +1,8 @@
 'use strict';
 
-
 var React = require( 'react' );
 var Component = require( './views/Component' );
+
 
 window.app = {
   init: function () {

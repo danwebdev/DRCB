@@ -7,11 +7,20 @@
 </head>
 <body>
   <div id="app-wrapper">
-    <span id="app-title">Component Name</span>
+    <span id="app-title"></span>
     <div id="app"></div>
   </div>
 
 
   <script src="app.bundle.js"></script>
+  <script>
+    setName();
+    function setName(){
+      var _component_name = "Component Name";
+      document.getElementById('app-title').innerHTML = _component_name;
+      document.title = _component_name;
+    }
+
+  </script>
 </body>
 </html>
